@@ -27,19 +27,18 @@ sub(2, 1) // prints 1
 ```
 But you can also create function template with it:  
 ```javascript
-let subFrom1 = sub(1) 
-// create a new function that subtract any number from 1  
-subFrom1(1) // prints 0  
-subFrom1(2) // prints -1  
-let sub1 = sub(undefined, 1)  
-sub1(1) // prints 0  
+let subFrom1 = sub(1) // create a new function that subtracts any number from 1  
+subFrom1(1) // prints 0
+subFrom1(2) // prints -1
+let sub1 = sub(undefined, 1) // create a new function that subtracts 1
+sub1(1) // prints 0
 sub1(2) // prints 1
 ```
 With this new tool, the second example can be simplified into:  
 ```javascript
 [1, 2, 3].map(sub(undefined, 1))  
 [1, 2, 3].map(sub(2))  
-[1, 2, 3.map(sub(undefined, 3))]
+[1, 2, 3].map(sub(undefined, 3))]
 ```
 Note that if you want to leave an argument as undefined, 
 you will need to use the keyword `undefined`, not `null`
