@@ -1,4 +1,5 @@
 ### Functional Programming JS
+Brings currying to JavaScript
 
 ## What does it do
 We know js has a lot of support for functional programming. 
@@ -25,7 +26,7 @@ This function can work just like the normal subtraction function:
 ```javascript
 sub(2, 1) // prints 1
 ```
-But you can also create function template with it:  
+But you can also create partial functions with it:  
 ```javascript
 let subFrom1 = sub(1) // create a new function that subtracts any number from 1  
 subFrom1(1) // prints 0
