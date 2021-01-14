@@ -1,4 +1,4 @@
-### Functional Programming JS
+# Functional Programming JS
 Brings currying to JavaScript
 
 ## What does it do
